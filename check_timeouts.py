@@ -1,3 +1,11 @@
+#!/usr/bin/python
+
+''' 
+Written by Matt Fowler (mattf@juniper.net).
+Python script to find orgs with non-default idle or session timers.
+
+'''
+
 import requests
 import json
 
