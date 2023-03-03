@@ -139,7 +139,7 @@ class mist_find(object):
             print (self.map_data[mac]['height'])
             print (self.map_data[mac]['width'])
 
-            # Mark the client's coordinates that we received from CMX. 
+            # Mark the client's coordinates that we received from Mist. 
             # The first line will draw a dot at the x,y location and the second and third lines will draw circles around it.
             plt.scatter(client_x, client_y, facecolor='r', edgecolor='r')
             plt.scatter(client_x, client_y, s=1000, facecolors='none', edgecolor='r')
@@ -154,7 +154,7 @@ class mist_find(object):
             plt.gca().set_ylim([0,int(self.map_data[mac]['height'])])
             plt.gca().set_xlim([0,int(self.map_data[mac]['width'])])
 
-            # The plot starts 0,0 from the bottom left corner but CMX uses the top left. 
+            # The plot starts 0,0 from the bottom left corner but Mist uses the top left. 
             # So, we need to invert the y-axis and, to make it easier to read, move the x axis markings to the top (if you choose to show them).
             plt.gca().set_ylim(plt.gca().get_ylim()[::-1])
             plt.gca().xaxis.tick_top()
