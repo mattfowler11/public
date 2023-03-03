@@ -1,7 +1,9 @@
 #!/usr/bin/python
 
-# Create Sites from CSV file. Moves and renames devices based on CSV.
-
+''' 
+Written by Matt Fowler (mattf@juniper.net).
+Python script that creates Sites from a CSV file. Also moves and renames devices based on CSV.
+'''
 
 # =====
 # IMPORTS
@@ -15,7 +17,7 @@ from config import *
 
 
 # =====
-# VARIABLES
+# FILES ETC
 # =====
 
 file = 'sites.csv' # Site creation CSV
@@ -448,7 +450,10 @@ def move_aps():
 
 
 
-# Main
+# =====
+# MAIN
+# =====
+
 if __name__ == '__main__':
 	ans=True
 	while ans:
