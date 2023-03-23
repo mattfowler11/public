@@ -3,8 +3,8 @@
 
 This Mist deployment script has 2 main capabilities:
 
-1.Add Sites
-2.Add Devices to Sites, Rename, and assign Switch Role
+1. Add Sites
+2. Add Devices to Sites, Rename, and assign Switch Role
 
 Sites are added based on the configuration in sites.csv
 Devices (APs, Switches and WAN Edges) are added to sites based on assign_file.csv
