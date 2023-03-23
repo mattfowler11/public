@@ -9,6 +9,7 @@ Python script that creates Sites from a CSV file. Also moves and renames devices
 # IMPORTS
 # =====
 
+import re
 import sys, requests
 import csv, json
 import time
@@ -437,9 +438,20 @@ def move_aps():
 
 			if site == desired_site_id:
 
-				device_setting = {
-					"name": device_name,
-				}
+				if re.search('switch', row['Type'], re.IGNORECASE):
+					
+					device_role = row['Switch Role']
+
+					device_setting = {
+							"name": device_name,
+							"role": device_role
+					}
+
+				else:
+
+					device_setting = {
+						"name": device_name
+					}
 
 				result = update_device(session, device_setting, site, device_mac)
 
