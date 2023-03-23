@@ -51,6 +51,7 @@ In sites.csv follow the format:
 Site Name,Site Group,Address,Country,RF Template
 Site A,Offices,123 Test St Sydney Australia,AU,TestRFTemplate
 ```
+Note: 'Country' should be set based on the 2-letter code for the country in https://api.gc1.mist.com/api/v1/const/countries (this is for Global02 - change the URL for your cloud environment - see step 4 above for the URLs)
 
 In assign_file.csv follow the format:
 ```csv
