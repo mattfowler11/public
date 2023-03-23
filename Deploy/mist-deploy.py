@@ -471,7 +471,7 @@ if __name__ == '__main__':
 	while ans:
 		print ("""
 		1.Add Sites
-		2.Add Devices to Sites and Rename
+		2.Add Devices to Sites, Rename and assign Switch Role
 		3.Exit/Quit
 		""")
 
